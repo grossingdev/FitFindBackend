@@ -1,0 +1,54 @@
+{
+  "host": "localhost",
+  "port": 8800,
+  "db": {
+    "uri": "mongodb://127.0.0.1:27017/fittfind"
+  },
+  "auth": {
+    "idField": "_id",
+    "token": {
+      "secret": "L59N73JaE8plMvMl9xiCd6QsuiTy5bjUEx/KID+QhQfZRALXduCn0xDxDG3Sc/TvVP5W8soesuEPbQndDlrmsw=="
+    },
+    "local": {
+      "idField": "_id"
+    },
+    "facebook": {
+      "provider":"facebook",
+      "endPoint":"/auth/facebook",
+      "callbackSuffix":"callback",
+      "clientID": "1594592434170513",
+      "clientSecret": "96a07b7cfbbe283465c059e0ea3a0584",
+      "failureRedirect": "/loginFailed",
+      "permissions": {
+        "scope": ["public_profile", "email"]
+      },
+      "profileFields": ["id", "displayName", "photos", "email", "first_name", "last_name", "age_range"]
+    },
+    "linkedin": {
+      "provider":"linkedin",
+      "endPoint":"/auth/linkedin",
+      "successRedirect": "/loginSuccess",
+      "failureRedirect": "/loginFailed",
+      "callbackSuffix":"callback",
+      "clientID": "81j5xdwkv5ntun",
+      "clientSecret": "dQoW5d7ph9GiCubC",
+      "permissions": {
+        "scope": ["r_basicprofile", "r_emailaddress"]
+      },
+      "profileFields": ["email-address", "first-name", "last-name", "formatted-name", "picture-url"]
+    }
+  },
+  "aws": {
+    "s3": {
+      "base_url": "https://s3-us-west-1.amazonaws.com/fitfind",
+      "bucket": "fitfind",
+      "accessKeyId": "AKIAIBFHLUP7LGPRANAA",
+      "secretAccessKey": "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"
+    }
+  },
+  "mailgun": {
+    "apiKey": "key-4680d65e1c6d26d58f8040bdffd6e62b",
+    "domain": "fittfind.com",
+    "sender": "support@fittfind.com"
+  }
+}

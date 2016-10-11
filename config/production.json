@@ -1,0 +1,21 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "db": {
+    "uri": "mongodb://127.0.0.1:27017/wonderbee"
+  },
+  "auth": {
+    "idField": "_id",
+    "token": {
+      "secret": "L59N73JaE8plMvMl9xiCd6QsuiTy5bjUEx/KID+QhQfZRALXduCn0xDxDG3Sc/TvVP5W8soesuEPbQndDlrmsw=="
+    },
+    "local": {
+      "usernameField": "username"
+    }
+  },
+  "mailgun": {
+    "apiKey": "key-7b2e04278d2f011ebb0f400d7752b01f",
+    "domain": "sandbox1196cf9409494182a80c925deeeb4fa9.mailgun.org"
+  },
+  "serviceWhitelist": ["user", "post"]
+}

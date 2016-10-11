@@ -1,0 +1,62 @@
+{
+  "name": "@doubleqliq/wb-backend",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "NODE_ENV=production babel-node src",
+    "watch": "NODE_ENV=development nodemon --exec babel-node src",
+    "fixtures": "NODE_ENV=development babel-node fixtures"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.6.7",
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "crypto": "0.0.3",
+    "crypto-js": "^3.1.6",
+    "dauria": "^1.1.4",
+    "feathers": "^2.0.1",
+    "feathers-authentication": "^0.7.9",
+    "feathers-blob": "^1.2.0",
+    "feathers-configuration": "^0.3.0",
+    "feathers-errors": "^2.2.0",
+    "feathers-hooks": "^1.5.4",
+    "feathers-mailgun": "^0.1.2",
+    "feathers-mongoose": "^3.4.1",
+    "feathers-rest": "^1.4.2",
+    "feathers-socketio": "^1.4.1",
+    "image-size": "^0.5.0",
+    "jade": "^1.11.0",
+    "lodash": "^4.13.1",
+    "mailgun-js": "^0.7.11",
+    "method-override": "^2.3.6",
+    "mime-types": "^2.1.12",
+    "mongoose": "^4.5.1",
+    "natural": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-facebook-token": "^3.3.0",
+    "passport-linkedin": "^1.0.0",
+    "passport-linkedin-oauth2": "^1.4.1",
+    "passport-linkedin-token": "^0.1.1",
+    "passport-linkedin-token-oauth2": "^0.1.3",
+    "s3-blob-store": "^1.2.3",
+    "validator": "^5.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "faker": "^3.1.0",
+    "nodemon": "^1.9.2"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "private": true
+}
